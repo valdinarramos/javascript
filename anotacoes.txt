@@ -1,9 +1,8 @@
         JAVASCRIPT
 
-AULA 02
+AULA 04
     Nessa aula foi encinado os primeiros comandos e o lugar que geralamente vai entrar o JAVASCRIPT, para isso sera colocado a tag <script></script> no final da tag <body>
     os comandos encinados foram. 
         window.alert('mensagem!') -> exibe uma mensagem na tela antes do site abrir
         window.confirm('pergunta?') -> exibe uma mensagem na tela no formato de pergunda.
         window.prompt('pergunta?') -> exibe uma mensagem na tela com uma caixa para resposta?
-        
