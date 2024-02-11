@@ -11,4 +11,16 @@ AULA 05
     comando para saber o tipo é o {typeof}
 AULA 06
     TRATAMENTO DE DADOS
+        Para receber para guardar um dado antes do pronpt é nescessario criar uma variavel
+            Ex: var none = window.prompt('qual é seu nome?')
+            para mostrar esse nome vc coloca em seguida window.alert('é um prazer te conhecer, '+ nome)
+            obs; o sinal de + serve para concatenar (LIGAR).
         
+        o comando window.pronpt() retorna os tados como string e quando escrevemos numeros o JS trata esses numeros como sendo do tipo string e nao como number, nesse caso se usarmos o sinal de + para somar ele junta os os numeros inves de somar, pois para que ele some é nescessario que as variaveis sejam do tipo number.
+        nesse caso é precisso converte os dados armazenados em numeros, para isso usamos os comandos Number.parseint(n) para numeros inteiros e NUmber.parsefloat(n) para numeros reais. caso não seja precisso especificar podemos usar so Namber(n)
+                ex:var n1 = number.parseint(window.prompt('pergunta?'))
+                    var n2 = number.parsefloat(window.prompt('pergunta?'))
+                    var s = n1 + n2
+                    window.alert('a soma dos valores é '+ s)
+        
+        para converte um numeros em string basta colocar string(n) ou n.toString() obs; n é o numero o a variavel 
