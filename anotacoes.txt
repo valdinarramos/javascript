@@ -6,3 +6,9 @@ AULA 04
         window.alert('mensagem!') -> exibe uma mensagem na tela antes do site abrir
         window.confirm('pergunta?') -> exibe uma mensagem na tela no formato de pergunda.
         window.prompt('pergunta?') -> exibe uma mensagem na tela com uma caixa para resposta?
+AULA 05
+    VARIAVEIS: as variaveis em JAVASCRIPT são decaradas pelo comando [var] e podem conter letras e numeros, mais não podem començar com numeros e podem començar tambem com os simbolos de underline [ _ ] e cifrão [ $ ], não se pode usar palavras reservadas os tipos primitivos principais são [ number(infinity e NaN) ] [ string ] [ boolean ] mais existem outros tipos como o [null] [undefined] [object (array)] [function]
+    comando para saber o tipo é o {typeof}
+AULA 06
+    TRATAMENTO DE DADOS
+        
