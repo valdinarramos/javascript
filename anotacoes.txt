@@ -24,3 +24,9 @@ AULA 06
                     window.alert('a soma dos valores é '+ s)
         
         para converte um numeros em string basta colocar string(n) ou n.toString() obs; n é o numero o a variavel 
+
+Formatando Strings 
+    var s = 'JavaScript' 
+     s.length // quantos caracteres a string tem
+     s.toUpperCase()  // tudo para 'MAIÚSCULAS' 
+     s.toLowerCase() // tudo para minúsculas'
