@@ -30,3 +30,13 @@ Formatando Strings
      s.length // quantos caracteres a string tem
      s.toUpperCase()  // tudo para 'MAIÚSCULAS' 
      s.toLowerCase() // tudo para minúsculas'
+OPERADORES ARITIMETICO
+    { +, -, *, /, %, **}
+        + -> soma
+        - -> subtração
+        * -> multiplicação
+        / -> divisão
+        % -> resto da divisão
+        ** -> podencia
+    ORDEM DE PRECEDÊCIA
+     (),  **,  * / %  ,  + -
