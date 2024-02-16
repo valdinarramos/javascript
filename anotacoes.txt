@@ -6,6 +6,8 @@ AULA 04
         window.alert('mensagem!') -> exibe uma mensagem na tela antes do site abrir
         window.confirm('pergunta?') -> exibe uma mensagem na tela no formato de pergunda.
         window.prompt('pergunta?') -> exibe uma mensagem na tela com uma caixa para resposta?
+        document.write(texto) -> comando para escrever na tela
+
 AULA 05
     VARIAVEIS: as variaveis em JAVASCRIPT são decaradas pelo comando [var] e podem conter letras e numeros, mais não podem començar com numeros e podem començar tambem com os simbolos de underline [ _ ] e cifrão [ $ ], não se pode usar palavras reservadas os tipos primitivos principais são [ number(infinity e NaN) ] [ string ] [ boolean ] mais existem outros tipos como o [null] [undefined] [object (array)] [function]
     comando para saber o tipo é o {typeof}
@@ -63,4 +65,16 @@ OPERADOR TERNARIO (se)
    texte ? verdadeiro : falso
     ->  se (?) faz isso 
         senao(:) faz isso 
+
+INTRODUÇÃO AO DOM (Document object Model)
+    basicamente tudo que esta dentr da janela do navegador é Dom, ou tudo dentro de window, voce pode navegar pelo DOM
+    usando os objetos selecionados 
+        POR MARCA (TAG)
+           -> comando - window.document.getElementsByTagName('tag') {inportante informar onte essa tag sera colocada, qual variavel} 
+        POR ID
+        POR NOME
+        POR CLASSE
+        POR SELETOR (CSS)
+
+
         
