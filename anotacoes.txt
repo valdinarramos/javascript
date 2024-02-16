@@ -40,3 +40,27 @@ OPERADORES ARITIMETICO
         ** -> podencia
     ORDEM DE PRECEDÊCIA
      (),  **,  * / %  ,  + -
+
+OPERADORES RELACIONAIS 
+    >   MAIOR QUE 
+    <   MENOR QUE 
+    >=  MAIOR OU IGUAL
+    <=  MENOR OU IGUAL
+    ==  IGUAL
+    !=  DIFERENTE DÊ
+
+    operador de identidade
+     === nesse caso estamos perguntando se os numeros são identicos ou seja,
+    tem mesmo tipo e valor, temos o oposto disso que seria o !== (desigual) esse pergunta são de tipos diferentes
+
+OPERADORES LOGICOS
+    ! NEGAÇÃO   (NÃO)
+    && CONJUNÇÃO (E)
+    || DIJUNÇÃO  (OU)
+        ordem de execução: NÃO, E, OU
+
+OPERADOR TERNARIO (se)
+   texte ? verdadeiro : falso
+    ->  se (?) faz isso 
+        senao(:) faz isso 
+        
