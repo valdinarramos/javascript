@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando numeros</title>
+    <style>
+        #txt01, #txt02{
+            width: 60px;
+            background-color: bisque;
+            font: normal 20px arial;
+            display: block;
+            margin-left: 30px;
+        }
+        p{
+            margin-left: 50px;
+        }
+        div{
+            margin-top: 20px;
+            margin-left: 30px;
+            font: bolder 20px arial;
+        }
+        #bot{
+            font-size: 18px;
+            margin: 7px;
+            margin-left: 23px;
+            padding: 5px 10px;
+            background-image: linear-gradient(to top, rgb(1, 54, 1), rgb(3, 184, 3));
+            border: none;
+            border-radius: 5px;
+            color: white;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.479);
+            }
+        #bot:hover{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Soma de numeros</h1>
+    <input type="number" name="txt01" id="txt01"> <p>+</p>
+    <input type="number" name="tct02" id="txt02">
+    <input type="button" value="Somar" id="bot" onclick="somar()">
+    <div id="res">
+        Resultado
+    </div>
+    <script>
+        function somar(){
+            var tx1 =document.getElementById('txt01')
+            var tx2 =document.getElementById('txt02')
+            var res = document.getElementById ('res')
+            var n1 = Number( txt01.value)
+            var n2 = Number(txt02.value)
+            var s = n1 + n2
+            /*var b = document.getElementById('bot')
+            b.style.background = 'red'*/
+            res.innerHTML = `A soma do numero ${n1} com o numero ${n2} é igual a <strong>${s}</strong>`
+
+        }
+
+
+    </script>
+    
+</body>
+</html>
