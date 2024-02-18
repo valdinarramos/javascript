@@ -70,11 +70,36 @@ INTRODUÇÃO AO DOM (Document object Model)
     basicamente tudo que esta dentr da janela do navegador é Dom, ou tudo dentro de window, voce pode navegar pelo DOM
     usando os objetos selecionados 
         POR MARCA (TAG)
-           -> comando - window.document.getElementsByTagName('tag') {inportante informar onte essa tag sera colocada, qual variavel} 
+           -> comando - window.document.getElementsByTagtagName('tag') {inportante informar onte essa tag sera colocada, qual variavel} 
         POR ID
+            -> .getElementsByTagid
         POR NOME
+            -> .getElementsByTagName
         POR CLASSE
+            -> .getElementsByTagClassName
         POR SELETOR (CSS)
+            -> .querySelector (tag#id) pode ser usado no lugar no id a classe representada por ponto
+FUNÇÃO é um bloco de codigo que determina uma funcionalidade que é ativada da forma que o DEV terminou. segue a baixo um exemplo 
 
+        <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        interaja..
+    </div>
+    <script>
+        var a =document.getElementById('area')
+        function clicar(){
+            a.innerText = 'Clicou!'
+            a.style.backgroundColor = 'red'
+        }
+        function entrar(){
+            a.innerText = 'Entrou!'
+        }
+        function sair(){
+            a.innerText = 'Saiu!'
+            a.style.background = 'green'
+        }
+    </script>
+
+    Nesse exemplo vemos que os blocos são criados com os {} e antes deles vem o nome function seguido por o nome da ação
+    mais () ex: function clicar(){ } 
 
         
