@@ -79,7 +79,8 @@ INTRODUÇÃO AO DOM (Document object Model)
             -> .getElementsByTagClassName
         POR SELETOR (CSS)
             -> .querySelector (tag#id) pode ser usado no lugar no id a classe representada por ponto
-FUNÇÃO é um bloco de codigo que determina uma funcionalidade que é ativada da forma que o DEV terminou. segue a baixo um exemplo 
+FUNÇÃO 
+        é um bloco de codigo que determina uma funcionalidade que é ativada da forma que o DEV terminou. segue a baixo um exemplo 
 
         <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
         interaja..
@@ -102,4 +103,31 @@ FUNÇÃO é um bloco de codigo que determina uma funcionalidade que é ativada d
     Nesse exemplo vemos que os blocos são criados com os {} e antes deles vem o nome function seguido por o nome da ação
     mais () ex: function clicar(){ } 
 
+CONDIÇÊS 
+    Condição simples
+        if( ) essa condiçao testa apena uma condição se ela for satisfeita um bloco sera execudo.
+        EX      var vel = 58
+                console.log(`Sua velocidade é de ${vel}km/h`)
+                if( vel > 60){
+                    console.log(`Você ultrapassou a velocidade maxima de 60km/h e foi MULTADO!`)
+                }
+                console.log('Dirija sempre usando cinto de segurança!')
+    
+    Condições composta 
+        if()
+        else() caso a primeira condição nao seja satisfeita ela executa o segundo bloco 
+
+    Condições aninhada
+        if()
+        else if()
+             nesse caso ela testa varias condiçôes ate que uma seja satisfeita
+             EX:
+                var idade = 25
+                if(idade >= 16 && idade < 18 || idade > 65 ){
+                    console.log ('Voto opcional')
+                } else if ( idade < 16){
+                    console.log('Não vota')
+                } else if(idade >= 18 && idade <= 65){
+                    console.log('voto obrigatorio')
+                }
         
