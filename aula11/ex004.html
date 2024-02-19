@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>detran</title>
+</head>
+<body>
+    <h1>Verificando a velocidade</h1>
+    <p>Digite sua velocidade</p>
+    <input type="number" name="vl1" id="vl1">
+    <input type="button" value="verificar" onclick="veri()">
+    <div id="res">Apos a verificação daremos mais informações!</div>
+   <script>
+    function veri(){
+    var vel = document.getElementById('vl1')
+    var resp= document.getElementById('res')
+    var n1= Number(vel.value)
+    if(n1 > 60){
+        resp.innerHTML = `Sua velociade é ${n1}km/h voce ultrapassou a velocidade <br> maxima e foi Multado`
+    }
+    else{
+        resp.innerHTML = 'muito bem voce esta dirigindo correntamente'
+    }
+    
+    }
+   </script>
+
+</body>
+</html>

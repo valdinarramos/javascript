@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nacionalidade</title>
+    <style>
+        body{
+            font:normal 20px arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Qual sua nacionalidade</h1>
+    <p>Digite seu pais</p>
+    <input type="text" id="nasc">
+    <input type="button" value="Enviar" onclick="env()">
+    <div id="res">resposta</div>
+    <script>
+        function env(){
+            var pais = document.getElementById('nasc')
+            var resp = document.getElementById('res')
+            var r = pais.value
+            if(pais == 'brasil' || 'Brasil'){
+               resp.innerHTML = `Seu pais é o ${r} você é Brasileiro`
+            }
+            else{ 
+                resp.innerHTML = 'voce é estrangeiro'
+            }
+            }
+    </script>
+</body>
+</html>
