@@ -130,4 +130,21 @@ CONDIÇÊS
                 } else if(idade >= 18 && idade <= 65){
                     console.log('voto obrigatorio')
                 }
-        
+SWITCH 
+    o suite é uma outra condiçao, mais so é serve para condiçôes especificas quando existe uma resposta exata
+    , ela so funciona com numeros inteiros
+    sua estrutura e a seguinte 
+
+        EX:
+                switch(contição){
+                    case 0:
+                    console.log ('resposta')
+                    break
+                    case 1:
+                    console.log ('resposta')
+                    break
+                    default:
+                    console.log ('resposta')
+                    break
+                } 
+       
