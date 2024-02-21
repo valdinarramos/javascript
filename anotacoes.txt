@@ -147,4 +147,6 @@ SWITCH
                     console.log ('resposta')
                     break
                 } 
-       
+CRIAÇÃO DE DADOS EM JAVASCRIPT
+     var img = document.createElement('img') cria uma tag em HTML
+        img.setAttribute('id','foto') nesse caso da a ela um atributo, que nesse caso é o id.
