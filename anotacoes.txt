@@ -150,3 +150,12 @@ SWITCH
 CRIAÇÃO DE DADOS EM JAVASCRIPT
      var img = document.createElement('img') cria uma tag em HTML
         img.setAttribute('id','foto') nesse caso da a ela um atributo, que nesse caso é o id.
+
+ESTRUTURA DE REPETIÇÃO 
+    while() repete um bloco ate que a condiçao seja satifeita 
+     ex;
+        var c = 1
+        while (c <= 6){
+            console.log(`Passo ${c}`)
+            c++
+        }
