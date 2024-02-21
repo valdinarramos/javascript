@@ -27,12 +27,25 @@ function verificar(){
                 genero = 'um homem idoso'
                 img.setAttribute('src','imagen/idoso-h.png')
             }
-            }else{
-            genero= 'Mulher'
+            } else{
+            //genero= 'Mulher'
+            if (idade >= 0 && idade <10){
+                genero ='menina'
+            img.setAttribute('src','imagen/bebe-m.png')
+            }else if (idade <21){
+                genero = 'uma jovem'
+            img.setAttribute('src','imagen/jovem-m.png')
+            }else if( idade < 50){
+                genero = 'uma mulher'
+            img.setAttribute('src','imagen/adulto-m.png')
+            }else {
+                genero = 'uma mulher idosa'
+                img.setAttribute('src','imagen/idoso-m.png')
+            }
+        
         }
-        res.style.textAlign = 'center'
-        res.style.padding = '20px'
-        res.innerHTML =`Detectamos: ${genero} com ${idade} anos.`
-        res.appendChild(img)
-    }
+    }res.style.textAlign = 'center'
+    res.style.padding = '20px'
+    res.innerHTML =`Detectamos: ${genero} com ${idade} anos.`
+    res.appendChild(img)
 }
