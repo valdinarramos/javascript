@@ -159,3 +159,11 @@ ESTRUTURA DE REPETIÇÃO
             console.log(`Passo ${c}`)
             c++
         }
+    
+    for(inicio; condiçao; incremento){
+        bloco
+    }
+
+        Ex: for(var c=1;c<=5;c++){
+        console.log(`passo ${c}`)
+        }
