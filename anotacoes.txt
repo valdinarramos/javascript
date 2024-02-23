@@ -167,3 +167,22 @@ ESTRUTURA DE REPETIÇÃO
         Ex: for(var c=1;c<=5;c++){
         console.log(`passo ${c}`)
         }
+
+ARRAY OU VECTOR
+    o array é uma variavel que pode receber mais de um valor, 
+    esse tipo de variavel sempre armazena dados do msm tipo
+
+    para criar uma variavel array é muito simplis 
+    basta digitar var n = [] a variavel pode ter qualquer nome e 
+    os espaços detro da variavel são separados por (,) ex: var n= [2,5,7,9]
+    nesse caso a variavel tem quatro valores e tem indice de 0 a 3 porquer os 
+    indices ou chaves començão no 0 , você pode adicionar valores a essa variavel 
+    digitando n[4]= 6. nesse caso o valor sera adicionado a posição 4 messmo que essa
+    posição ainda não exista, vc tambem pode colocar esse valor utilizando o comando 
+    n.push(3) nesse caso o numero 3 sera adicionado a ultima posição não importando 
+    qual.
+    para saber o a quantidade de elementos dentro da variavel o camando é 
+    n.length -> length nao tem parentese no final
+    para coloca os itens em ordem cresente o camando é o 
+    n.sort()
+    
