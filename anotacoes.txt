@@ -178,11 +178,18 @@ ARRAY OU VECTOR
     nesse caso a variavel tem quatro valores e tem indice de 0 a 3 porquer os 
     indices ou chaves començão no 0 , você pode adicionar valores a essa variavel 
     digitando n[4]= 6. nesse caso o valor sera adicionado a posição 4 messmo que essa
-    posição ainda não exista, vc tambem pode colocar esse valor utilizando o comando 
+    posição ainda não exista, 
+    
+    vc tambem pode colocar esse valor utilizando o comando 
     n.push(3) nesse caso o numero 3 sera adicionado a ultima posição não importando 
     qual.
+    
     para saber o a quantidade de elementos dentro da variavel o camando é 
     n.length -> length nao tem parentese no final
+    
     para coloca os itens em ordem cresente o camando é o 
     n.sort()
     
+    para buscar um valor dentro da variavel usamos o comando 
+    varivel.indexOf(3) esse numero que vai entre parentese é o valor que quermos encontrar 
+    e o comando vai retornar em qual posição ele esta
