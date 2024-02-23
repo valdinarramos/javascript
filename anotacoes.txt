@@ -103,6 +103,38 @@ FUNÇÃO
     Nesse exemplo vemos que os blocos são criados com os {} e antes deles vem o nome function seguido por o nome da ação
     mais () ex: function clicar(){ } 
 
+        function imppar(n){
+        if(n%2==1){
+            return`impar`
+        }else{
+            return`par`
+        }
+    }
+    var res = imppar(10)
+    console.log(res) 
+
+    ChatGPT
+    Sua função imppar(n) parece correta para verificar se um número é par ou ímpar. No entanto, observe que você está chamando a função com o argumento 10 e armazenando o resultado em uma variável chamada res, que está sendo impressa no console. Como 10 é um número par, o resultado esperado seria "par".
+
+    Se você quiser testar a função com diferentes valores, você pode modificar a chamada da função. Aqui está um exemplo:
+
+    javascript
+    Copy code
+    function imppar(n) {
+        if (n % 2 == 1) {
+            return 'ímpar';
+        } else {
+            return 'par';
+        }
+    }
+
+    var res1 = imppar(10);
+    console.log(res1);  // Isso imprimirá "par", pois 10 é par
+
+    var res2 = imppar(7);
+    console.log(res2);  // Isso imprimirá "ímpar", pois 7 é ímpar
+    Neste exemplo, a função imppar é chamada duas vezes com diferentes argumentos, e os resultados são impressos no console. Certifique-se de ajustar os valores de entrada conforme necessário para testar diferentes casos.
+
 CONDIÇÊS 
     Condição simples
         if( ) essa condiçao testa apena uma condição se ela for satisfeita um bloco sera execudo.
@@ -193,3 +225,4 @@ ARRAY OU VECTOR
     para buscar um valor dentro da variavel usamos o comando 
     varivel.indexOf(3) esse numero que vai entre parentese é o valor que quermos encontrar 
     e o comando vai retornar em qual posição ele esta
+
