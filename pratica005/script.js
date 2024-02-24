@@ -1,31 +1,48 @@
 var c =[]
 var maior = 0 
 var menor = 100
-function adicionar(){
 var txt = document.getElementById('txt1')
 var tab = document.getElementById('txtres')
-var num = Number(txt.value)
-if(num <=0 || num > 100){
-    alert('ERRO! tente novamente!')
-}else{
-    var item = document.createElement('option')
-    item.text = `valor ${num} adicionado!`
-    item.value = `tab${num}}`
-    tab.appendChild(item)
-    c.push(num)       
-            
-    
+var txt2
+function isNumero (n){
+    if (Number(n) >= 1 && Number(n)<=100){
+        return true
+    }else{
+        return false
+    }
+}
+function inlista(n , l){
+    if (l.indexOf(Number(n)) != -1){
+        return true
+    } else {
+        return false
+    }
 }
 
+function adicionar(){
+ if(isNumero(txt.value) && !inlista(txt.value,c)){
+    c.push(Number(txt.value))
+    var item = document.createElement('option')
+    item.text = `valor ${txt.value} adicionado!`
+    tab.appendChild(item)
+ }else{
+    alert('Valor invalido ou já encontrado na lista')
+ }
+ txt.value =''
+ txt.focus()
+ txt2.innerHTML=''
 }
+
+
+
 var media = 0
 function final(){
     if(c==0){
     alert('[ERRO] adicione numeros para finalizar')
 }else{
 
-    var txt2= document.getElementById('rel')
-    txt2.innerHTML= (`Ao todo, temos ${c.length} numeros cadastrados<br>`)
+    txt2= document.getElementById('rel')
+    txt2.innerHTML= (`<p>Ao todo, temos ${c.length} numeros cadastrados</p>`)
     var soma = 0
     for (var i = 0; i < c.length; i++) {
         soma += c[i];
@@ -37,10 +54,10 @@ function final(){
         }
         media= (soma/c.length)
     }
-     txt2.innerHTML += (`O maior numero informado foi ${maior}<br>`)
-     txt2.innerHTML += (`O menor numero informado foi ${menor}<br>`)   
-     txt2.innerHTML += (`A soma dos valores é ${soma}<br>`)
-     txt2.innerHTML += (`A media dos valores é ${media}`)
+     txt2.innerHTML += (`<p>O maior numero informado foi ${maior}</p>`)
+     txt2.innerHTML += (`<p>O menor numero informado foi ${menor}</p>`)   
+     txt2.innerHTML += (`<p>A soma dos valores é ${soma}</p>`)
+     txt2.innerHTML += (`<p>A media dos valores é ${media}</p>`)
 
 }
 }
