@@ -18,7 +18,11 @@ section{
 select{
     margin-bottom: 10px;
 }
-
+/*p#rel{
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 15px;
+}*/
 footer{
     text-align: center;
     color: white;

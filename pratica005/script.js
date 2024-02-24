@@ -23,6 +23,7 @@ function final(){
     if(c==0){
     alert('[ERRO] adicione numeros para finalizar')
 }else{
+
     var txt2= document.getElementById('rel')
     txt2.innerHTML= (`Ao todo, temos ${c.length} numeros cadastrados<br>`)
     var soma = 0
